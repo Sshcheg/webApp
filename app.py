@@ -69,7 +69,7 @@ def login():
 # http://127.0.0.1:5000/home
 
 if __name__ == '__main__':  
-    insert_to_db()
+    
     app.run(debug=True)
     
 # CREATE TABLE Users(id SERIAL PRIMARY KEY, username VARCHAR(30), password VARCHAR(20), name VARCHAR(40)); таблица пользователей
