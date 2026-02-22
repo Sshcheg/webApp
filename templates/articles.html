@@ -112,10 +112,13 @@
     </nav>
 
     <main>
+        {% for post in posts %}
         <article>
-            <h2>{{header}}</h2>
-            <p>{{text}}</p>   
+            <h2>{{ post[0] }}</h2>
+            <p>{{ post[1] }}</p>
+            <small>Автор: {{ post[2] }}</small>
         </article>
+        {% endfor %}
     </main>
 
 </body>
